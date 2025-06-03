@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Bela e a Fera - Psicologia</title>
+  <style>
+    :root {
+      --cor-azul: #0b1c2c;
+      --cor-dourado: #c9a14b;
+      --cor-vermelho: #b33a3a;
+      --cor-texto: #f5f5f5;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', serif;
+    }
+
+    body {
+      background-color: var(--cor-azul);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: var(--cor-texto);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 20px 10px 20px;
+      color: var(--cor-dourado);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.3rem;
+    }
+
+    .slide {
+      display: none;
+      position: relative;
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+      background-color: rgba(11, 28, 44, 0.85);
+      border: 4px solid var(--cor-dourado);
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(201, 161, 75, 0.7);
+      overflow: hidden;
+    }
+
+    .slide svg.decoracao {
+      position: absolute;
+      opacity: 0.15;
+      pointer-events: none;
+    }
+
+    .decoracao1 {
+      top: 10px;
+      left: 10px;
+      width: 80px;
+    }
+
+    .decoracao2 {
+      top: 10px;
+      right: 10px;
+      width: 100px;
+    }
+
+    .decoracao3 {
+      bottom: 10px;
+      left: 10px;
+      width: 70px;
+    }
+
+    .decoracao4 {
+      bottom: 10px;
+      right: 10px;
+      width: 60px;
+    }
+
+    .active {
+      display: block;
+      animation: fade 0.7s;
+    }
+
+    @keyframes fade {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    h2 {
+      color: var(--cor-dourado);
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    p, ul, ol {
+      margin-bottom: 15px;
+      line-height: 1.7;
+      font-size: 1.1rem;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .navegacao {
+      text-align: center;
+      margin: 20px;
+    }
+
+    .navegacao button {
+      background-color: var(--cor-dourado);
+      color: var(--cor-azul);
+      border: none;
+      padding: 10px 25px;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .navegacao button:hover {
+      background-color: var(--cor-vermelho);
+      color: var(--cor-texto);
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: rgba(11, 28, 44, 0.7);
+      color: var(--cor-dourado);
+      font-size: 0.9rem;
+      border-top: 1px solid var(--cor-dourado);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>A Bela e a Fera</h1>
+    <p>Uma Análise Psicológica</p>
+  </header>
+
+  <!-- Slides com SVGs decorativos aplicados -->
+  <div id="slide1" class="slide active">
+    <svg class="decoracao decoracao1" viewBox="0 0 120 180"><ellipse cx="60" cy="150" rx="50" ry="10" fill="#c9a14b"/><rect x="40" y="40" width="40" height="100" rx="20" fill="#0e1a24" stroke="#c9a14b" stroke-width="4"/><circle cx="60" cy="30" r="8" fill="#c9a14b"/><path d="M60 120 Q55 100 60 80 Q65 60 60 40" stroke="#3a7d3a" stroke-width="4" fill="none"/><circle cx="60" cy="40" r="8" fill="#b33a3a"/><circle cx="55" cy="45" r="5" fill="#b33a3a"/><circle cx="65" cy="45" r="5" fill="#b33a3a"/><circle cx="60" cy="50" r="5" fill="#b33a3a"/></svg>
+    <svg class="decoracao decoracao4" viewBox="0 0 50 300"><path d="M25 10 Q10 50 25 90 Q40 130 25 170 Q10 210 25 250 Q40 290 25 330" stroke="#c9a14b" stroke-width="4" fill="none"/></svg>
+    <h2>Slide 1 – A Psicologia do Isolamento e da Solidão</h2>
+    <p><strong>A Fera e o Isolamento:</strong> Vive afastado do convívio social devido à sua aparência. O isolamento reflete uma profunda dor emocional.</p>
+    <p><strong>Consequências Psicológicas:</strong></p>
+    <ul>
+      <li>Solidão prolongada gera raiva, tristeza, insegurança e baixa autoestima.</li>
+      <li>A exclusão social prejudica o desenvolvimento emocional e as relações.</li>
+    </ul>
+    <p><strong>Cérebro e Solidão:</strong></p>
+    <ul>
+      <li>Ativa a amígdala, aumentando o medo e o estado de alerta.</li>
+      <li>Reduz atividade do córtex pré-frontal, afetando regulação emocional.</li>
+      <li>Compromete áreas ligadas à recompensa e prazer, intensificando o sofrimento.</li>
+    </ul>
+  </div>
+
+  <div id="slide2" class="slide">
+    <svg class="decoracao decoracao2" viewBox="0 0 150 200"><g stroke="#c9a14b" stroke-width="4" fill="none"><path d="M75 180 Q65 150 85 120 Q65 100 75 80 Q85 100 65 120 Q85 150 75 180 Z" fill="#c9a14b"/><line x1="75" y1="80" x2="75" y2="40"/><line x1="50" y1="100" x2="50" y2="50"/><line x1="100" y1="100" x2="100" y2="50"/><rect x="70" y="30" width="10" height="10" fill="#c9a14b"/><rect x="45" y="40" width="10" height="10" fill="#c9a14b"/><rect x="95" y="40" width="10" height="10" fill="#c9a14b"/></g><g fill="#ffc857"><circle cx="75" cy="20" r="8"/><circle cx="50" cy="30" r="8"/><circle cx="100" cy="30" r="8"/></g></svg>
+    <svg class="decoracao decoracao3" viewBox="0 0 100 160"><g><ellipse cx="50" cy="50" rx="35" ry="45" fill="#c9a14b" stroke="#7c5b20" stroke-width="4"/><ellipse cx="50" cy="50" rx="28" ry="38" fill="#0e1a24"/><rect x="45" y="95" width="10" height="40" fill="#c9a14b" stroke="#7c5b20" stroke-width="2"/><ellipse cx="50" cy="140" rx="15" ry="5" fill="#c9a14b" stroke="#7c5b20" stroke-width="2"/></g></svg>
+    <h2>Slide 2 – A Jornada de Autotransformação da Fera</h2>
+    <p><strong>Transformação Interior:</strong> Desafiado por Bela, a Fera precisa lidar com suas emoções e reconstruir-se emocionalmente.</p>
+    <p><strong>Fases da Transformação:</strong></p>
+    <ol>
+      <li>Resistência: Agressividade e evitação.</li>
+      <li>Confronto: Emoções e conflitos expostos.</li>
+      <li>Autoconhecimento: Reflete sobre si mesmo.</li>
+      <li>Mudança: Desenvolve empatia, controle emocional e desejo de conexão.</li>
+    </ol>
+    <p><strong>Psicologia da Mudança:</strong> Processo semelhante ao da psicoterapia, onde só há transformação após o enfrentamento da dor e dos traumas internos.</p>
+  </div>
+
+  <div id="slide3" class="slide">
+    <svg class="decoracao decoracao1" viewBox="0 0 120 180"><ellipse cx="60" cy="150" rx="50" ry="10" fill="#c9a14b"/><rect x="40" y="40" width="40" height="100" rx="20" fill="#0e1a24" stroke="#c9a14b" stroke-width="4"/><circle cx="60" cy="30" r="8" fill="#c9a14b"/><path d="M60 120 Q55 100 60 80 Q65 60 60 40" stroke="#3a7d3a" stroke-width="4" fill="none"/><circle cx="60" cy="40" r="8" fill="#b33a3a"/><circle cx="55" cy="45" r="5" fill="#b33a3a"/><circle cx="65" cy="45" r="5" fill="#b33a3a"/><circle cx="60" cy="50" r="5" fill="#b33a3a"/></svg>
+    <h2>Slide 3 – Bela: Mudança, Crescimento e Resiliência</h2>
+    <p><strong>Nova Realidade, Novos Desafios:</strong> Bela é retirada de seu ambiente seguro e enfrenta um mundo desconhecido, cheio de medo e preconceitos.</p>
+    <p><strong>Desenvolvimento Pessoal:</strong></p>
+    <ul>
+      <li>Inicialmente resistente, desenvolve força interna e resiliência.</li>
+      <li>Supera desafios emocionais e amadurece psicologicamente.</li>
+    </ul>
+    <p><strong>Aspectos Psicológicos:</strong></p>
+    <ul>
+      <li>Enfrenta medos, julgamentos e desafios externos.</li>
+      <li>Simboliza a capacidade humana de se reinventar.</li>
+    </ul>
+    <p><strong>Mudança Comportamental:</strong> Evolui de relutante para empática, de crítica para aberta, e influencia positivamente também a Fera.</p>
+  </div>
+
+  <div id="slide4" class="slide">
+    <svg class="decoracao decoracao4" viewBox="0 0 50 300"><path d="M25 10 Q10 50 25 90 Q40 130 25 170 Q10 210 25 250 Q40 290 25 330" stroke="#c9a14b" stroke-width="4" fill="none"/></svg>
+    <h2>Slide 4 – Empatia, Vínculo e Psicologia dos Relacionamentos</h2>
+    <p><strong>Empatia Transformadora:</strong> A empatia de Bela permite que ela enxergue além das aparências, conectando-se emocionalmente com a Fera.</p>
+    <p><strong>Construção do Vínculo:</strong></p>
+    <ul>
+      <li>Empatia abre espaço para diálogo e conexão emocional.</li>
+      <li>O relacionamento evolui de hostilidade para confiança e afeto.</li>
+    </ul>
+    <p><strong>Psicologia da Aceitação:</strong> Ambos precisam superar inseguranças para aceitar o outro, criando um vínculo sólido e verdadeiro.</p>
+    <p><strong>Reflexão Crítica:</strong> A relação levanta debates, como a possível interpretação de Síndrome de Estocolmo, mas muitos psicólogos a leem como um processo de transformação genuíno mediado pela empatia.</p>
+  </div>
+
+  <div id="slide5" class="slide">
+    <svg class="decoracao decoracao2" viewBox="0 0 150 200"><g stroke="#c9a14b" stroke-width="4" fill="none"><path d="M75 180 Q65 150 85 120 Q65 100 75 80 Q85 100 65 120 Q85 150 75 180 Z" fill="#c9a14b"/><line x1="75" y1="80" x2="75" y2="40"/><line x1="50" y1="100" x2="50" y2="50"/><line x1="100" y1="100" x2="100" y2="50"/><rect x="70" y="30" width="10" height="10" fill="#c9a14b"/><rect x="45" y="40" width="10" height="10" fill="#c9a14b"/><rect x="95" y="40" width="10" height="10" fill="#c9a14b"/></g><g fill="#ffc857"><circle cx="75" cy="20" r="8"/><circle cx="50" cy="30" r="8"/><circle cx="100" cy="30" r="8"/></g></svg>
+    <h2>Slide 5 – Conclusões Psicológicas: Amor, Cura e Transformação</h2>
+    <p><strong>Síntese das Transformações:</strong></p>
+    <ul>
+      <li>A Fera cura sua solidão e agressividade desenvolvendo empatia e amor.</li>
+      <li>Bela enfrenta seus próprios medos e cresce emocionalmente.</li>
+    </ul>
+    <p><strong>Lições Psicológicas:</strong></p>
+    <ul>
+      <li>A solidão pode gerar dor, mas também ser solo fértil para transformação.</li>
+      <li>A empatia é um dos maiores motores de mudança nos relacionamentos.</li>
+      <li>O autoconhecimento permite superar inseguranças profundas.</li>
+      <li>O amor pode ser catalisador da cura emocional e da aceitação mútua.</li>
+    </ul>
+    <p><strong>Reflexão Final:</strong> A história é uma metáfora sobre como nossas emoções moldam quem somos e como o encontro com o outro pode nos transformar.</p>
+  </div>
+
+  <div class="navegacao">
+    <button onclick="mudarSlide(-1)">Anterior</button>
+    <button onclick="mudarSlide(1)">Próximo</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 A Bela e a Fera - Psicologia. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    let slideAtual = 1;
+    const slides = document.getElementsByClassName("slide");
+
+    function mostrarSlide(n) {
+      if (n > slides.length) { slideAtual = 1; }
+      if (n < 1) { slideAtual = slides.length; }
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+      }
+      slides[slideAtual - 1].classList.add("active");
+    }
+
+    function mudarSlide(n) {
+      slideAtual += n;
+      if (slideAtual > slides.length) slideAtual = 1;
+      if (slideAtual < 1) slideAtual = slides.length;
+      mostrarSlide(slideAtual);
+    }
+
+    mostrarSlide(slideAtual);
+  </script>
+
+</body>
+</html>
